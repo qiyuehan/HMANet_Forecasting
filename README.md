@@ -21,10 +21,16 @@ pip install -r requirements.txt
 
 2. Download data. You can obtain all the eight benchmarks from [baidupan](https://pan.baidu.com/s/19lqv1VLG9VBx7Nh04L1u0A?pwd=mswn 
 )password：mswn. **All the datasets are well pre-processed** and can be used easily.
-3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. You can reproduce the experiment results by:
+3. Pre-training the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. To run the code with a single GPU on etth1, just run the following command：
 ```bash
 bash ./scripts/pretraining.sh
 ```
+The model will be saved to the checkpoint folder for the downstream tasks. There are several other parameters can be set in the main.py script.
+
+%Fine-tuning: The script patchtst_finetune.py is for fine-tuning step. Either linear_probing or fine-tune the entire network can be applied.
+
+
+
 
 ## Main Result
 
