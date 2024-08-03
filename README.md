@@ -27,8 +27,6 @@ bash ./scripts/pretraining.sh
 ```
 The model will be saved to the checkpoint folder for the downstream tasks. There are several other parameters can be set in the main.py script.
 
-%Fine-tuning: The script patchtst_finetune.py is for fine-tuning step. Either linear_probing or fine-tune the entire network can be applied.
-
 
 
 
